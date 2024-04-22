@@ -10,7 +10,7 @@ The SATX token contract integrates specialized logic for transfers, especially w
 
 ### Problematic Code
 
-#### _transfer Function
+#### _transfer Function [SATXtoken.sol](SATXtoken.sol#L982-L991)
 ```solidity
 function _transfer(
     address from,
@@ -41,7 +41,7 @@ function _transfer(
 }
 ```
 
-#### _isDelLiquidityV2 Function
+#### _isDelLiquidityV2 Function [SATXtoken.sol](SATXtoken.sol#L1106-L1119)
 ```solidity
 function _isDelLiquidityV2() internal view returns(bool ldxDel, bool bot, uint256 otherAmount){
     address token0 = IUniswapV2Pair(address(uniswapV2Pair)).token0();
